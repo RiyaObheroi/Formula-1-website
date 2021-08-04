@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title>Calander</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="calander.css"> 
+    <link rel="icon" href="Images/formula1.jpg" type="image/x-icon">
+
+</head>
+<body>
+ <div class="container">
+   	 <div class="nav-wrapper">
+   	 	<div class="left-side">
+           
+                 <div class="logo">
+                 <img src="Images/formula1.jpg">
+             </div>
+                <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+             </div>
+           
+              <div class="nav-link-wrapper">
+                  <a href="testing.html">2021 Calander</a>
+             </div>
+        </div>
+       <div class="right-side">
+            <div class="nav-link-wrapper"> 
+            <a href="signup.html">sign up</a>
+            </div>
+        </div>
+      
+      
+      </div>
+       
+</div>
+<div class="race_container"> 
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 1</h1>
+    <h2 class="race_venue">BAHRAIN INTERNATIONAL CIRCUIT</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+    <p class="race_text"> The race leaders include</p>
+    <li class="winner">Lewis Hamilton</li>
+    <li class="winner">Max Verstappen</li>
+    <li class="winner">Vallateri Bottas</li>
+    </ul>
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The first race was scheduled on 28th March in the treaterous conditions of Bahrain</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 2</h1>
+    <h2 class="race_venue">AUTODROMO ENZO E DINO FERRARI </h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+    <p class="race_text"> The race leaders include</p>
+    <li class="winner">Max Verstappen</li>
+    <li class="winner">Lewis Hamilton</li>
+    <li class="winner">Lando Norris</li>
+    </ul>
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The second race was scheduled on 18th April in the rainy conditions of Italy</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 3</h1>
+    <h2 class="race_venue">ALGARVE INTERNATIONAL CIRCUIT</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The race is scheduled for the coming Sunday</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 4</h1>
+    <h2 class="race_venue">CIRCUIT DE BARCELONA-CATLUNYA</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The race is yet to happen</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 5</h1>
+    <h2 class="race_venue">CIRCUIT DE MONACO</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The race is yet to happen</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 6</h1>
+    <h2 class="race_venue">BAKU CITY CIRCUIT</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The race is yet to happen</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 7</h1>
+    <h2 class="race_venue">CIRCUIT GILLES VILLENEUVE</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The race is yet to happen</p>
+  </div>
+</section>
+
+<section class= "race_event">
+  <div class="race_event__header">
+    <h1 class="race_event_title">Race 8</h1>
+    <h2 class="race_venue">CIRCUIT PAUL RICARD</h2>
+  </div>
+  <div class="race_timings">
+  <ul class="race_winners">
+  </div>
+
+  <div class="race_action">
+<p class="race_text">The race is yet to happen</p>
+  </div>
+</section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $('*').on('mousemove', function(e){
+    centerX =$(this.width()/2);
+    var moveX = centerX - e.offsetX;
+    $(this).css({
+      'transform': 'perspective(500px) rotateY('+ moveX/20 + ')'
+    })
+  });
+</script>
+</body>
+</html> 

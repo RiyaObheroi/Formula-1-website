@@ -1,0 +1,81 @@
+.card
+{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+.card1
+{
+	background-image: url(Images/gasly.jpg);
+}
+.card2
+{
+	background-image: url(Images/yuki.jpg);
+}
+.card3
+{
+	background-image: url(Images/graham.jpg);
+}
+.card4
+{
+	background-image: url(Images/helmut.jpg);
+}
+
+.card:hover
+{
+	transform: translateY(-10px); 
+}
+.cone
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url(Images/alpha1.png);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+.row
+{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.col
+{
+	flex-basis: 50%;
+}
+
+h1
+{
+	color: #fff;
+	font-size: 100px;
+}
+
+p
+{
+	color: green;
+	font-size: 11px;
+	line-height: 15px;
+	background-color: #f0e4d7;
+	border-radius: 10px;
+	padding: 20px;
+	letter-spacing: 0.5px;
+ 	justify-content: center;
+ 	font-family: Calibri, Candara, Segoe,"SegoeUI", Optima, Arial, sans-serif;
+ 	line-height: 1;
+ 	font-size: 15px;
+ 	font-style: italic;
+ 	font-weight: bold;
+ 	text-align: justify; 
+}

@@ -1,0 +1,100 @@
+
+.race_event{
+	width: 300px;
+	border-radius: 25px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	overflow: hidden;
+	font-family: "Times nee Roman";
+	font-size: 16px;
+	line-height: 1.5;
+	color: #555555;
+	margin: 15px;
+}
+
+
+.race_event_header{
+	padding: 25px;
+	background: #009578;
+	color: #ffffff;
+}
+
+.race_event_title, 
+.race_venue{
+	margin:0;
+	text-align: cen ter;
+}
+.race_event_title{
+	font-size: 1.5em;
+	font-weight: 400;
+	padding-left:30px;
+	background-color: red;
+}
+
+.race_venue{
+	font-size:1em;
+	font-weight: 300;
+	padding-left: 30px;
+	background-color: #fbceb5;
+}
+
+.race_timings
+{
+	padding:25px;
+	background-color: #fff8dc;
+}
+
+.race_winners
+{
+padding: 0;
+margin: 0;
+background-color: #fff8dc;
+}
+
+.winner
+{
+	list-style: none;
+	margin: 0;
+	padding-left: 25px;
+	position: relative;
+	font-size: 0.9em; 
+	background-color: #fff8dc;
+}
+
+.winner:not(:last-child){
+	margin-bottom: 0.5em;
+}
+
+.winner::before{
+	content: "\2714";
+	color: #fbceb5;
+	left: 0;
+	position: absolute;
+		
+}
+
+.race_action{
+	padding: 25px;
+	border-top: 1px solid #eeeeee;
+	display: flex;
+	flex-direction: column;
+		background-color: #fff8dc;
+}
+
+.race_text{
+	font-size: 0.9em;
+	text-align: center;
+	margin: 0 0 10px 0;
+	background-color: #fff8dc;
+}
+
+.race_container{
+	display: grid;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background-color: #f5f5f5;
+	background: url("Images/drivers.jpg");
+	background-position: top;
+	background-repeat: repeat;
+}

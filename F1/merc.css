@@ -1,0 +1,216 @@
+:root {
+  --primary: #22D2A0;
+  --secondary: #192824;
+  --background: #192824;
+  --green: #1FC11B;
+  --yellow: #FFD913;
+  --orange: #FF9C55;
+  --red: #FF5555;
+} 
+.container_final
+{
+	background-color: #7f5a83;
+	background-image: linear-gradient(315deg, #7f5a83, #0d324d);
+	background-repeat: no-repeat;
+	background-size: contain;
+    height: auto;
+}
+.container_one
+{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	background: #222;
+	display: flex;
+	align-items: center;
+	left: 300px;
+	top:20px;
+}
+
+.container_one .clip
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.container_one .clip.clip1
+{
+	background: url(Images/lewus.jpg);
+	background-size: cover;
+	clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%);
+}
+.container_one .clip.clip2
+{
+	background: url(Images/bottas.jpg);
+	background-size: cover;
+	clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+.container_one .clip.clip3
+{
+	background: url(Images/toto.jpg);
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.container_one:hover .clip
+{
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container_one .clip:hover
+{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container_one .clip .content
+{
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 70%;
+	padding: 20px;
+	background: #fff;
+	transition: 0.5s;
+	opacity: 0;
+
+}
+.container_one .clip:hover .content
+{
+	bottom: 0;
+	opacity: 1;
+}
+
+h2
+{
+	position: relative;
+	font-size: 3em;
+    font-family: 'Times new roman', monospace;
+	letter-spacing: 15px;
+	color: #064420;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	line-height: 0.70em;
+	outline: none;
+	top: 20px;
+	animation: animate 5s linear infinite;
+}
+@keyframes animate {
+	0%,18%,20%,50.1%, 60%,65.1%, 80%, 90.1%, 92%
+	{
+		color: #f9b208;
+		text-shadow: none;
+	}
+
+	18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%,100%
+	{
+		color: #fff;
+		text-shadow: 0 0 10px #f9b208, 
+		0 0 20px #f9b208,
+		0 0 40px #f9b208,
+		0 0 80px #f9b208,
+		0 0 160px #f9b208;
+	}
+}
+h1
+{
+	position: relative;
+	font-size: 3em;
+    font-family: 'Times new roman', monospace;
+	letter-spacing: 15px;
+	color: #064420;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	line-height: 0.70em;
+	outline: none;
+	top: 20px;
+	animation: animate 5s linear infinite;
+}  
+ .para {
+    background-color: #334443;
+ 	margin-top: 50px;
+ 	margin-bottom: 20px;
+ 	margin-left: 40px;
+ 	margin-right: 40px;
+ 	letter-spacing: 0.5px;
+ 	justify-content: center;
+ 	font-family: Calibri, Candara, Segoe,"SegoeUI", Optima, Arial, sans-serif;
+ 	line-height: 1;
+ 	font-size: 20px;
+ 	font-style: italic;
+ 	font-weight: lighter;
+ 	text-align: justify; 
+ 	color:yellow;
+ 	align-items: center;
+    display: block;
+  	width: 75%;
+  	padding: 20px;
+  	cursor: pointer;
+  	margin: auto auto;
+  	border: 3px solid var(--primary);
+  	box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
+
+.para:hover {
+  animation: shadow-wave 1s ease infinite;
+}
+
+
+@keyframes shadow-wave {
+  0% {
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+      20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+      30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+      40px -40px 0 -3px var(--background), 40px -40px var(--red);
+  }
+  20% {
+    border: 3px solid var(--red);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary),
+      20px -20px 0 -3px var(--background), 20px -20px var(--green),
+      30px -30px 0 -3px var(--background), 30px -30px var(--yellow),
+      40px -40px 0 -3px var(--background), 40px -40px var(--orange);
+  }
+  40% {
+    border: 3px solid var(--orange);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--red),
+      20px -20px 0 -3px var(--background), 20px -20px var(--primary),
+      30px -30px 0 -3px var(--background), 30px -30px var(--green),
+      40px -40px 0 -3px var(--background), 40px -40px var(--yellow);
+  }
+  60% {
+    border: 3px solid var(--yellow);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--orange),
+      20px -20px 0 -3px var(--background), 20px -20px var(--red),
+      30px -30px 0 -3px var(--background), 30px -30px var(--primary),
+      40px -40px 0 -3px var(--background), 40px -40px var(--green);
+  }
+  80% {
+    border: 3px solid var(--green);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
+      20px -20px 0 -3px var(--background), 20px -20px var(--orange),
+      30px -30px 0 -3px var(--background), 30px -30px var(--red),
+      40px -40px 0 -3px var(--background), 40px -40px var(--primary);
+  }
+  100% {
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+      20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+      30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+      40px -40px 0 -3px var(--background), 40px -40px var(--red);
+  }
+  
+}
+
+.para2
+{
+	color: #fcf8ec;
+}

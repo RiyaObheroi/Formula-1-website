@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title>Alpine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="alpine.css"> 
+    <link rel="icon" href="Images/logo/alpine_logo.png" type="image/x-icon">
+</head>
+<body style="background-color: #fff5ab">
+ <div class="container" >
+   	 <div class="nav-wrapper">
+   	 	<div class="left-side">
+           
+                 <div class="logo">
+                 <img src="Images/logo/alpine_logo.png">
+             </div>
+                <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+             </div>
+         
+              <div class="nav-link-wrapper">
+                  <a href="trying.html">2021 Calander</a>
+             </div>
+        </div>
+       <div class="right-side">
+            <div class="nav-link-wrapper"> 
+            <a href="signup.html">sign up</a>
+            </div>
+        </div>
+      
+      
+      </div>
+</div>
+
+
+<div class="container-final" >
+  <div class="indicator">
+  <span class="btn active"></span>
+  <span class="btn"></span>
+  <span class="btn"></span>
+  </div>
+      <div class="teams">
+    <div class="slide-row" id="slide">
+     
+     <div class="slide-col">
+        <div class="user-text">
+           <p> If there's one word that dominates Esteban Ocon's career, it's 'sacrifice'.
+            Back when he was just a promising karter, Ocon's parents sold their house, put their jobs on hold and began a life on the road, living in a caravan and travelling from circuit to circuit to support their son's burgeoning career. 
+            Though it was a sacrifice, in 2014 he got a seat as he beat the most promising diver in F3. Ever since then his career has own seen the sunlight.</p>
+           <h2>ESTABEAN OCON</h2>
+        </div>
+        <div class="user-img">
+          <img src="Images/ocon.jpg">
+        </div>
+     </div>
+
+     <div class="slide-col">
+        <div class="user-text">
+         <p>Michael Schumacher was the undisputed king of Formula 1 in the early 2000s, picking up wins and championships at a rate that was simply unheard of at the time. It was going to take someone very special to topple the Ferrari legend from his throne – and that it was Fernando Alonso who did it, tells you all you need to know about the Spaniard.Fiercely competitive, Alonso is not shy about his talent, rating himself as 9/10 “in everything” and filled in the shoes of Michael Schumacher perfectly.</p>
+         <h2>FERNANDO ALONSO</h2>
+        </div>
+        <div class="user-img">
+           <img src="Images/alonso.jpg">
+        </div>
+     </div>
+
+     <div class="slide-col">
+       <div class="user-text">
+         <p>"Davide joins the Alpine F1 Team with a wealth of experience and success following more than 20 years in the MotoGP World Championship.As well as a change in leadership at the top, Alpine will also have a new driver line-up in 2021 with Fernando Alonso returning to the team where he won his two world championship titles to partner Esteban Ocon, following Daniel Ricciardo's switch to McLaren.</p>
+         <h2>DAVIDE</h2>
+       </div>
+       <div class="user-img">
+        <img src="Images/davide.jpg">
+       </div>
+     </div>
+ 
+    </div>
+      </div>
+</div>
+
+<script type="text/javascript">
+  var btn= document.getElementsByClassName("btn");
+  var slide = document.getElementById("slide");
+  btn[0].onclick = function(){
+    slide.style.transform = "translateX(0px)";
+    for(i=0;i<3;i++)
+    {
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+
+  btn[1].onclick = function(){
+    slide.style.transform = "translateX(-800px)";
+     for(i=0;i<3;i++)
+    {
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+
+  btn[2].onclick = function(){
+    slide.style.transform = "translateX(-1600px)";
+     for(i=0;i<3;i++)
+    {
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+</script>
+</body>
+</html> 

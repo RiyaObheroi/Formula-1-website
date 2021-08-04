@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title>Williams</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="william.css"> 
+    <link rel="icon" href="Images/logo/williams_logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="bodyy">
+ <div class="container">
+   	 <div class="nav-wrapper">
+   	 	<div class="left-side">
+           
+                 <div class="logo">
+                 <img src="Images/logo/williams_logo.png">
+             </div>
+                <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+             </div>
+             
+              <div class="nav-link-wrapper">
+                  <a href="trying.html">2021 Calander</a>
+             </div>
+        </div>
+       <div class="right-side">
+            <div class="nav-link-wrapper"> 
+            <a href="signup.html">sign up</a>
+            </div>
+        </div>
+      
+      
+      </div>
+      
+ </div>
+
+ <div class="content">
+  <div class="textBox">
+    <h2>WILLIAMS RACING</h2>
+    <br>
+    <p> <i>The Williams Formula 1 team is a sporting icon - an expression often used without substance, but Williams has forged a reputation of success through sheer determination and grit intertwined with innovation, passionate and skilful race-craft and an absolute desire to win.
+
+That spirit, drive and motivation, to continually push boundaries and explore the limits of performance, are all traits shared by our extended family of team partners.
+
+Their support allows us to go racing and by working collaboratively with each, we have the greatest chance of success both on and off the racetrack.
+  </i></p>
+  </div>
+
+  <div class="imgBox">
+    <img src="Images/Williams.jpg" class="williams">
+  </div>
+</div>
+
+<ul class="thumb">
+   <li><img src="Images/Williams.jpg" onclick="imgSlider('Images/Williams.jpg'); changeBgColor('#b8b5ff')"></li>
+   <li><img src="Images/williams_!.jpg" onclick="imgSlider('Images/williams_!.jpg'); changeBgColor('#E8E46E')"></li>
+  </ul>
+</div>
+<script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.williams').src =anything;
+  }
+  function changeBgColor(color){
+    const sec = document.querySelector('.bodyy');
+    sec.style.background = color;
+  }
+</script> 
+</body>
+</html> 
